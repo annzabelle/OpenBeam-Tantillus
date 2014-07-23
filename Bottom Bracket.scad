@@ -1,11 +1,6 @@
-bracketThickness = 5;
-extrusionThickness = 15;
-holeDiameter = 4;
-holeSpacing = 15;
-footHeight = 10;
-footDimension = bracketThickness + extrusionThickness;
-bracketDimension = 30;
-bracketFullDimension = bracketThickness + extrusionThickness + bracketDimension;
+include <Parameters.scad>;
+
+bracketFullDimension = bracketThickness + extrusionThickness + bracketInnerDimension;
 
 linear_extrude(height=bracketThickness)
 polygon([[0, 0], [bracketFullDimension, 0], [bracketFullDimension, extrusionThickness + bracketThickness], [extrusionThickness + bracketThickness, bracketFullDimension], [0, bracketFullDimension]]);
