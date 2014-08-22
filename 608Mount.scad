@@ -5,7 +5,7 @@ module 608Mount(throughDepth, heightOffSurface, wallThickness, transVec, rotVec)
 			translate(transVec)
 				rotate(rotVec)
 					translate([0,0,-heightOffSurface])
-						cylinder(d=22+wallThickness, h=heightOffSurface);
+						cylinder(d2=22+wallThickness+7,d1=22+wallThickness, h=heightOffSurface);
 		}
 		translate(transVec)
 			rotate(rotVec) {
