@@ -12,19 +12,35 @@ module igubalBlobule() {
 	}
 }
 
-translate ([-25, -7.5, 0]) {
-	difference () {	
-		union() {	
-			translate([0,-15,0]) igubalBlobule();
-			translate([40,-15,0])igubalBlobule();
-			translate([25,0,15])
-				rotate([-90,0,0])
-					difference() {
-						translate ([-20,0,0])cube([40,15,15]);
-						translate([0,0,-1]) cylinder(d=8,h=11);
-					}
-		}
-		translate ([0, 10, 0]) NutTrap();
-		translate ([0, -10, 0]) NutTrap();
+difference () {
+	translate ([-25,0, 0]) {
+		translate([0,0,0]) igubalBlobule();
+		translate([40,0,0])igubalBlobule();
+		translate([25,0,0])
+				difference() {
+					translate ([-15,0,0])cube([30,15,10]);
+					translate([0,5,10]) rotate([-90,0,0]) cylinder(d=8,h=100);
+				}
 	}
+	translate ([10, 7.5, -5]) cylinder(d=3.4, h=100);
+	translate ([-10, 7.5, -5]) cylinder(d=3.4, h=100);
+}
+
+difference () {
+	translate([-5,-10,0]) {
+		cube([10,10,5]);
+	}
+	translate([0,-5,-1]) {
+		cylinder(d=screwHoleDiam, h=100);
+	}
+}
+
+if (genTop) {
+difference() {
+	translate ([-15,0,10])cube([30,15,10]);
+	translate([0,5,10]) rotate([-90,0,0]) cylinder(d=8,h=100);
+	
+	translate ([10, 7.5, -5]) cylinder(d=3.4, h=100);
+	translate ([-10, 7.5, -5]) cylinder(d=3.4, h=100);
+}
 }
