@@ -34,7 +34,7 @@ for (i = [0: (bracketHeight - baseScrewOffset - screwHoleDiam/2) / wideScrewHole
 		rotate([0,90,0])
 			cylinder (h = 100, d = screwHoleDiam);
 }
-for (i = [0: (bracketWidth - baseScrewOffset - screwHoleDiam/2 - yGearClearance) / wideScrewHoleSpacing]) {
+for (i = [0: (bracketWidth - baseScrewOffset - screwHoleDiam/2) / wideScrewHoleSpacing]) {
 	translate ([-.5, bracketThickness + extrusionThickness/2 + wideScrewHoleSpacing * i + yGearClearance, bracketThickness + extrusionThickness/2, ])
 		rotate([0,90,0])
 			cylinder (h = 100, d = screwHoleDiam);
@@ -49,7 +49,7 @@ difference() {
 			rotate([90,0,0])
 				LShape(thickness = gearClearance, x=bracketWidth+xGearClearance, y=bracketHeight, wx= extrusionThickness+bracketThickness, wy=extrusionThickness+bracketThickness+xGearClearance);}
 }
-for (i = [0: (bracketHeight - baseScrewOffset - screwHoleDiam/2 - xGearClearance) / wideScrewHoleSpacing]) {
+for (i = [0: (bracketHeight - baseScrewOffset - screwHoleDiam/2) / wideScrewHoleSpacing]) {
 	translate ([baseScrewOffset + xGearClearance, -.5, bracketThickness + extrusionThickness/2 + wideScrewHoleSpacing * i])
 		rotate([-90,0,0])
 			cylinder (h = 100, d = screwHoleDiam);

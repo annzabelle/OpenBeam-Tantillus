@@ -6,7 +6,7 @@ wideScrewHoleSpacing = 30;
 screwHoleDiam = 4;
 
 /* Design Parameters */
-XYSpacing = 15;
+XYSpacing = 20;
 
 /* Gear Parameters */
 gearDiam = 50;
