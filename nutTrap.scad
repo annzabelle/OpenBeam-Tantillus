@@ -1,4 +1,4 @@
-module nutTrap(screw="m3", trapDepth=0, depth=100) {
+module NutTrap(screw="m3", trapDepth=0, depth=100) {
 		hexEdge=3.1;
 		trapDepth = trapDepth==0 ? 2.4 : trapDepth;
 		holeDiam=3.4;
@@ -17,4 +17,4 @@ module nutTrap(screw="m3", trapDepth=0, depth=100) {
 	}
 }
 
-nutTrap();
+NutTrap();
