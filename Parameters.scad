@@ -26,7 +26,8 @@ footHeight = 10;
 footDimension = bracketThickness + extrusionThickness;
 bracketInnerDimension = 30;
 
-
+/* nema mount size */
+nemaMountSize = 40;
 
 $fs = .5;
 $fa = 3;

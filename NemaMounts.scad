@@ -44,7 +44,3 @@ module slideyNema17Mount(length, depth) {
 		cylinder(h=depth, d=6);
 	}
 }
-
-slideyNema17Mount(10,10);
-
-translate([50,0,0]) nema17Mount(10,10);
