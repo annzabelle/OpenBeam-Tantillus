@@ -1,5 +1,5 @@
 include <Parameters.scad>
-include <NemaMounts.scad>
+use <NemaMounts.scad>
 
 module nema17MountFace(){
 	difference(){
