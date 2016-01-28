@@ -17,13 +17,13 @@ pitchDiam=45; //pitch diameter
 shaftDiam=5; //shaft diameter
 
 //TEETH PARAMETERS
-teethNum=20; //number of teeth (int)
+teethNum=30; //number of teeth (int)
 
-addendum=1;
+addendum=1.5;
 
-dedendum=1;
+dedendum=1.5;
 
-toothWidth=1;
+toothWidth=1.5;
 
 angle=30; //positive=right, negative=left
 
