@@ -4,7 +4,7 @@ use <nemaMounts.scad>
 module nema17MountFace(){
 	difference(){
 		cube([nemaMountSize + 2 * bracketThickness,nemaMountSize + 3 * bracketThickness + extrusionThickness,bracketThickness], [0,0,bracketThickness / 2]);
-		translate([nemaMountSize / 2 + 5, nemaMountSize / 2 + extrusionThickness + 2 * bracketThickness, 0]){
+		translate([nemaMountSize / 2 + 5, nemaMountSize / 2 + extrusionThickness + 2 * bracketThickness, -0.5]){
 			nema17Mount(bracketThickness * 2);
 		}
 	}
@@ -21,20 +21,22 @@ module mountBar(){
 }
 
 module screwHole(xSpacing){
-	translate([xSpacing, extrusionThickness / 2, -3 * bracketThickness - extrusionThickness]){	
+	translate([xSpacing, extrusionThickness / 2, -2.5 * bracketThickness - extrusionThickness]){	
 		cylinder(3 * bracketThickness + extrusionThickness, screwHoleDiam / 2, screwHoleDiam / 2, 0);
 	}
 }
 
 module extrusionCube(height) {
-	cube([extrusionThickness, extrusionThickness, height], 0);
+	translate([0,-1,-1]) {
+        cube([extrusionThickness, extrusionThickness+1, height+2], 0);
+    }
 } 
 
 module zSupportMounts (){
     for (i = [0, ZSupportSpacing]){
         translate([i,0,0]){
             difference(){
-                cylinder(d = rodDiam + 2, h = 2 * rodDiam + 5);
+                cylinder(d = rodDiam + 4, h = 2 * rodDiam + 5);
                 translate([0,0,5]){
                     cylinder(d = rodDiam, h = 2 * rodDiam + 5);
                 }
