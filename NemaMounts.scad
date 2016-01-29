@@ -4,16 +4,16 @@ module nema17Mount (depth) {
 	union() {
 		translate([-33.1/2, -33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-		
+
 		translate([33.1/2, -33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-		
+
 		translate([-33.1/2, 33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-   
+
 		translate([33.1/2, 33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-		cylinder(h=3, d=23);
+		cylinder(h= depth / 2, d=23);
 		cylinder(h=depth, d=6);
 	}
 }
@@ -31,13 +31,13 @@ module slideyNema17Mount(length, depth) {
 	slideyMount(length) {
 		translate([-33.1/2, -33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-		
+
 		translate([33.1/2, -33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-		
+
 		translate([-33.1/2, 33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
-   
+
 		translate([33.1/2, 33.1/2, 0])
 			cylinder (h=depth,d=m3Diam);
 		cylinder(h=3, d=23);
@@ -48,13 +48,13 @@ module flatNema17Mount(){
 	union() {
 		translate([-33.1/2, -33.1/2])
 			circle (d=m3Diam);
-		
+
 		translate([33.1/2, -33.1/2])
 			circle (d=m3Diam);
-		
+
 		translate([-33.1/2, 33.1/2])
 			circle (d=m3Diam);
-   
+
 		translate([33.1/2, 33.1/2])
 			circle (d=m3Diam);
         circle (d = 23);
@@ -74,13 +74,13 @@ module flatSlideyNema17Mount(length) {
 	slideyMount(length) {
 		translate([-33.1/2, -33.1/2])
 			circle(d=m3Diam);
-		
+
 		translate([33.1/2, -33.1/2])
 			circle(d=m3Diam);
-		
+
 		translate([-33.1/2, 33.1/2])
 			circle(d=m3Diam);
-   
+
 		translate([33.1/2, 33.1/2, 0])
 			circle(d=m3Diam);
         circle (d = 23);
