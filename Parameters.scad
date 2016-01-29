@@ -5,8 +5,10 @@ narrowScrewHoleSpacing = 15;
 wideScrewHoleSpacing = 30;
 screwHoleDiam = 4;
 
+
 /* Design Parameters */
 XYSpacing = 20;
+platformLength = 153;
 
 /* Gear Parameters */
 gearDiam = 30;
@@ -19,6 +21,7 @@ bearingRadius = 11;
 
 /* rod parameters */
 rodClearance = 10;
+rodDiam = 8;
 
 /* top bracket parameters */
 gearSpacing = 10; // spacing between gear and extrusion
@@ -32,6 +35,10 @@ bracketInnerDimension = 30;
 /* nema mount size */
 nemaMountSize = 40;
 slideyNemaMountSize = 60;
+
+/* Z axis Parameters */
+ZSupportSpacing = 50; //how wide the Z supports are
+zSupportBeamSpacing = nemaMountSize / 2; //how far the z supports are from the beam
 
 $fs = .5;
 $fa = 3;

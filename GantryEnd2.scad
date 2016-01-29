@@ -1,8 +1,8 @@
 include <Parameters.scad>
 
-genBottom = true;
+genBottom = false;
 genLowTop = false;
-genHighTop = false;
+genHighTop = true;
 
 if (genBottom) difference () {
 	union() {
@@ -33,7 +33,11 @@ if (genLowTop) difference () {
 	translate([25,35,-1]) cylinder(h=100, d=screwHoleDiam);
 }
 
-if (genHighTop) difference () {
+if (genHighTop)
+   highTop(); 
+    
+module highTop (){
+    difference () {
 	translate([0,0,30]) cube ([30,30,10]);
 
  	translate([-1,15,30]) rotate([0,90,0]) cylinder(h=100, d=9);
@@ -44,4 +48,5 @@ if (genHighTop) difference () {
 	translate([5,25,-1]) cylinder(h=100, d=screwHoleDiam);
 	translate([25,25,-1]) cylinder(h=100, d=screwHoleDiam);
 	translate([25,5,-1]) cylinder(h=100, d=screwHoleDiam);
+}
 }

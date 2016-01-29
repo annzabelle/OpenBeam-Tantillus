@@ -30,12 +30,28 @@ module extrusionCube(height) {
 	cube([extrusionThickness, extrusionThickness, height], 0);
 } 
 
+module zSupportMounts (){
+    for (i = [0, ZSupportSpacing]){
+        translate([i,0,0]){
+            difference(){
+                cylinder(d = rodDiam + 2, h = 2 * rodDiam + 5);
+                translate([0,0,5]){
+                    cylinder(d = rodDiam, h = 2 * rodDiam + 5);
+                }
+            }
+        }
+    }
+}
+
 difference(){
 	union(){
 		nema17MountFace();
 		translate([nemaMountSize / 2 - extrusionThickness / 2,0,0]){
 			mountBar();
 		}
+        translate([0, extrusionThickness + rodDiam + 2 + zSupportBeamSpacing, 0]){
+            zSupportMounts();
+        }
 	}
 	translate([nemaMountSize / 2 + bracketThickness - extrusionThickness / 2,0,0]){
 		extrusionCube(bracketThickness + 3 * narrowScrewHoleSpacing);
