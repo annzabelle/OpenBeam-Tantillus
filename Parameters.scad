@@ -5,6 +5,9 @@ narrowScrewHoleSpacing = 15;
 wideScrewHoleSpacing = 30;
 screwHoleDiam = 4;
 
+/* BasePlate Parameters*/
+BBPMountingHoles = true;
+AirTripperMountingHoles = true;
 
 /* Design Parameters */
 XYSpacing = 20;
