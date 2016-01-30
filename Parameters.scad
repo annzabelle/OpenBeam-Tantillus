@@ -13,6 +13,9 @@ platformLength = 153;
 /* Gear Parameters */
 gearDiam = 30;
 
+/*clamp parameters*/
+clampWidth = 30;
+
 
 /* 608 Bearing Mount Parameters */
 bearingHolderWallThickness = 3;
