@@ -5,7 +5,10 @@
 ## Features
 + Parametric. Edit Parameters.scad to change pretty much anything about the design (even build area).
 + Enclosed. The frame will enclose everything, besides, maybe the power supply
-+ Every feature of the [Tantillus].
++ Every feature of the original [Tantillus] (except maybe size).
++ T - Slot Extrusion Frame - Sturdy
++ [Airtripper Extruder] mount holes.
++ [FastBot BBP] mounting.
 
 ## How do I build one?
 It would be pretty hard to build one right now, as we haven't published a BOM
@@ -17,3 +20,5 @@ There may be a build guide uploaded to the github wiki.
 
 [Tantillus]: https://github.com/Intrinsically-Sublime/Tantillus
 [openbeam]: https://openbeamusa.com
+[Airtripper Extruder]: http://airtripper.com/1071/airtrippers-bowden-extruder-v3-updated-design/
+[FastBot BBP]: http://www.fastbot3d.com/boardbbp1s
