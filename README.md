@@ -1,4 +1,4 @@
-# OpenBeam Tantillus README
+# OpenBeam Tantillus
 + This is a work in progress.
 + Inspired by Intrinsically-Sublime's [Tantillus]
 
