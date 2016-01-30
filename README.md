@@ -9,6 +9,7 @@
 + T - Slot Extrusion Frame - Sturdy
 + [Airtripper Extruder] mount holes.
 + [FastBot BBP] mounting.
++ Uses either Igubal bearings or bronze bushings.
 
 ## How do I build one?
 It would be pretty hard to build one right now, as we haven't published a BOM
