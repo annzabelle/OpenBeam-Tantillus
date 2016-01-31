@@ -2,7 +2,7 @@ include <Parameters.scad>;
 use <BracketPentagon.scad>;
 use <BottomBracket.scad>;
 
-BottomTotalDemension = extrusionThickness * 2 + gearSpacing * 2 + clampWidth + bracketThickness + platformLength;
+BottomTotalDemension = extrusionThickness * 2 + gearSpacing * 2 + clampWidth * 2+ bracketThickness + platformLength + 25;
 
 module lowerCorners(){
 	spacing = BottomTotalDemension + .01;
