@@ -7,7 +7,8 @@ screwHoleDiam = 4;
 
 /* BasePlate Parameters*/
 BBPMountingHoles = true;
-AirTripperMountingHoles = true;
+AirTripperMountingHoles = false;
+AirTripperMountingHolesForDualExtrusion = true;
 
 /* Design Parameters */
 XYSpacing = 20;

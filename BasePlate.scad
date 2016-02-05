@@ -63,4 +63,11 @@ difference(){
     if(AirTripperMountingHoles){
       AirTripperMountingHoles();
     }
+		if(AirTripperMountingHolesForDualExtrusion){
+			for(i = [-27.5, 27.5]){
+				translate([0, i, 0]) {
+					AirTripperMountingHoles();
+				}
+			}
+		}
 }
