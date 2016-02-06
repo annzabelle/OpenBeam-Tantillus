@@ -12,7 +12,7 @@ difference() {
     }
   }
   for (x = [platformLength / 3, platformLength * 2 / 3]) {
-    for (y = [platformLength / 2 - ZSupportSpacing / 2, platformLength / 2 + ZSupportSpacing / 2 + 25]) {
+    for (y = [platformLength / 2 - ZSupportSpacing / 2, platformLength / 2 + ZSupportSpacing / 2 - 25]) {
       translate([x, y]) {
         circle(d = screwHoleDiam);
       }
